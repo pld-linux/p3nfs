@@ -9,6 +9,7 @@ Source0:	http://www.koeniglich.de/packages/%{name}-%{version}.tar.gz
 Patch0:		%{name}-configure.patch
 Patch1:		%{name}-Makefile.patch
 URL:		http://www.koeniglich.de/p3nfs.html
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
