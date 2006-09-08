@@ -1,0 +1,16 @@
+--- p3nfs-5.19/configure.in.orig	2005-11-24 20:14:46 +0300
++++ p3nfs-5.19/configure.in	2006-05-10 16:36:32 +0400
+@@ -77,11 +77,11 @@
+ for i in /dev/tty0p0 /dev/tty00 /dev/ttyS0 /dev/ttys0 /dev/term/a /dev/ttyfa /dev/ttya /dev/tty0 /dev/ttyf1 /dev/cuaa1 ; do
+   if test -c $i ; then
+     DDEV=$i
+-    AC_MSG_RESULT($i)
+     break
+   fi
+ done
+-test -z "$DDEV" && AC_MSG_ERROR(serial device not found... Try harder.)
++test -n "$DDEV" || DDEV=/dev/ttyS0
++AC_MSG_RESULT($DDEV)
+ AC_SUBST(DDEV)
+ 
+ dnl Looking for Symbian SDKs:
