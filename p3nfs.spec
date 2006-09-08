@@ -1,11 +1,13 @@
-Summary:	Symbian to UNIX/Linux communication program
+Summary:	A program for mount Symbian OS file system using Bluetooth, IrDA and NFS
 Name:		p3nfs
 Version:	5.19
 Release:	0.1
-License:	- (enter GPL/GPL v2/LGPL/BSD/BSD-like/other license name here)
+License:	GPL
 Group:		Applications
 Source0:	http://www.koeniglich.de/packages/%{name}-%{version}.tar.gz
 # Source0-md5:	15ac5e1b44a7c7f53369846c3cfe4de4
+Patch0:		%{name}-configure.patch
+Patch1:		%{name}-Makefile.patch
 URL:		http://www.koeniglich.de/p3nfs.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,8 +21,11 @@ tools on the UNIX machine.
 
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
 
 %build
+%{__autoconf}
 %configure
 %{__make}
 
@@ -35,4 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
+%doc %{_docdir}/%{name}-%{version}
+%attr(755,root,root) %{_sbindir}/p3nfsd
+%{_mandir}/p3nfsd.1*
