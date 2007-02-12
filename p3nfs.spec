@@ -1,5 +1,5 @@
 Summary:	A program for mount Symbian OS file system using Bluetooth, IrDA and NFS
-Summary(pl.UTF-8):   Program do montowania systemu plików Symbian OS poprzez Blootooth, IrDA i NFS
+Summary(pl.UTF-8):	Program do montowania systemu plików Symbian OS poprzez Blootooth, IrDA i NFS
 Name:		p3nfs
 Version:	5.19
 Release:	0.1
