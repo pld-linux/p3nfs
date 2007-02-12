@@ -1,5 +1,5 @@
 Summary:	A program for mount Symbian OS file system using Bluetooth, IrDA and NFS
-Summary(pl):	Program do montowania systemu plików Symbian OS poprzez Blootooth, IrDA i NFS
+Summary(pl.UTF-8):   Program do montowania systemu plikÃ³w Symbian OS poprzez Blootooth, IrDA i NFS
 Name:		p3nfs
 Version:	5.19
 Release:	0.1
@@ -21,13 +21,13 @@ filesystems of the Phone/PDA as a filesystem on your UNIX machine, and
 you can copy/backup/edit any file on the Phone/PDA with your preferred
 tools on the UNIX machine.
 
-%description -l pl
-P3nfsd to program do komunikacji miêdzy Symbianem (Psion/Nokia/Sony
-Ericsson itp.) a Uniksem/Linuksem. Pozwala montowaæ systemy plików
-telefonów lub PDA na maszynie uniksowej. Oznacza to, ¿e wszystkie
-systemy plików telefonów/PDA widaæ jako systemy plików na maszynie
-uniksowej i mo¿na kopiowaæ i modyfikowaæ dowolny plik na telefonie/PDA
-przy u¿yciu swoich ulubionych narzêdzi na maszynie uniksowej.
+%description -l pl.UTF-8
+P3nfsd to program do komunikacji miÄ™dzy Symbianem (Psion/Nokia/Sony
+Ericsson itp.) a Uniksem/Linuksem. Pozwala montowaÄ‡ systemy plikÃ³w
+telefonÃ³w lub PDA na maszynie uniksowej. Oznacza to, Å¼e wszystkie
+systemy plikÃ³w telefonÃ³w/PDA widaÄ‡ jako systemy plikÃ³w na maszynie
+uniksowej i moÅ¼na kopiowaÄ‡ i modyfikowaÄ‡ dowolny plik na telefonie/PDA
+przy uÅ¼yciu swoich ulubionych narzÄ™dzi na maszynie uniksowej.
 
 %prep
 %setup -q
